@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    min-width: 100vw;
+    min-height: 100vh;
+} */
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Luckiest Guy', cursive;
+    background: linear-gradient(to right,
+        #f90000b8,
+        #ff6b08,
+        #23cf29b5,
+        #eedd44
+    );
+} 
+
+ .gameContainer{
+    height: 80vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+} 
+
+.gameInfo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.gameBoard{
+    background: #d9d9d9;
+    width: 60vmin;
+    height: 70vmin;
+    margin-top: 2px;
+    display: grid;
+    grid-template-rows: repeat(30,1fr);
+    grid-template-columns: repeat(30,1fr);
+    border: 2px solid black;
+}
+
+.score{
+    align-self: flex-start;
+    font-size: 4vmin;
+    font-weight: bold;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.head{
+    background-color: rgb(250, 5, 5);
+    border: 2px solid black;
+    border-radius: 40%;
+    overflow: hidden;
+}
+
+.body{
+    background-color: #4b4642;
+    border-radius: 40%;
+}
+
+.food{
+    background-color: rgb(40, 119, 40);
+    border-radius: 50%;
+}
